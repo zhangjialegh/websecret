@@ -1,0 +1,30 @@
+<!--pages/addinfo/addinfo.wxml-->
+<view class='container'>
+  <!-- 保存按钮 -->
+  <button plain class='save-btn' bindtap='saveData'>
+   <text class='text'>保存</text>
+  </button>
+
+ <view class='section'>
+
+  <view class='input-wrapper'>
+    <text class='input-label'>网站名</text>
+    <input data-value="webname" class="input {{activewebname == 'webname' ? 'active-border' : 'normal-border'}}" type='text' value="{{webname}}" focus="{{true}}" bindinput='handleInput' bindfocus='handleFocus' bindblur='handleBlur'></input>
+  </view>
+
+  <view class='input-wrapper'>
+    <text class='input-label'>登录名</text>
+    <input data-value="name" class="input {{activename == 'name' ? 'active-border' : 'normal-border'}}" type='text' value="{{name}}" bindinput='handleInput' bindfocus='handleFocus' bindblur='handleBlur'></input>
+  </view>
+
+  
+
+  <view class='input-wrapper'>
+    <text class='input-label'>备注</text>
+    <textarea class='textarea' placeholder='请输入内容...' placeholder-class="placeholder-class" type='text' value="{{remark}}" bindinput='handleRemarkInput'></textarea>
+  </view>
+
+
+ </view>
+</view>
+

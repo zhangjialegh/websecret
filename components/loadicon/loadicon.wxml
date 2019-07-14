@@ -1,0 +1,17 @@
+<!--components/loadicon/loadicon.wxml-->
+<view class='spinner-box {{size}}'>
+  <view class="lds-spinner {{size}}">
+    <view style="background: {{color}}" class="spinner1"></view>
+    <view style="background: {{color}}" class="spinner2"></view>
+    <view style="background: {{color}}" class="spinner3"></view>
+    <view style="background: {{color}}" class="spinner4"></view>
+    <view style="background: {{color}}" class="spinner5"></view>
+    <view style="background: {{color}}" class="spinner6"></view>
+    <view style="background: {{color}}" class="spinner7"></view>
+    <view style="background: {{color}}" class="spinner8"></view>
+    <view style="background: {{color}}" class="spinner9"></view>
+    <view style="background: {{color}}" class="spinner10"></view>
+    <view style="background: {{color}}" class="spinner11"></view>
+    <view style="background: {{color}}" class="spinner12"></view>
+  </view>
+</view>

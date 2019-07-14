@@ -1,0 +1,51 @@
+/* pages/addinfo/addinfo.wxss */
+.save-btn {
+  height: 80rpx;
+  width: 150rpx;
+  position: fixed;
+  bottom: 50rpx;
+  right: 50rpx;
+  background: var(--base-color) !important;
+  border-radius: 40rpx;
+  overflow: hidden;
+  padding: 0 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.save-btn > .text {
+  font-size: 30rpx;
+  color: #fff;
+}
+.section {
+  padding-top: 40rpx;
+}
+.input-wrapper {
+  padding: 20rpx 0;
+  position: relative;
+}
+.input-wrapper > .input {
+  width: 100%;
+}
+.input-wrapper > .input.generate {
+  background: #efefef;
+}
+.input-wrapper > .input.normal-border {
+  border-bottom: 1rpx solid var(--border-light-color);
+}
+.input-wrapper > .input.active-border {
+  border-bottom: 1rpx solid var(--base-color);
+}
+.input-wrapper > .input-label {
+  display: block;
+  font-size: 32rpx;
+  color: var(--text-grey-color);
+  margin-bottom: 30rpx;
+}
+.input-wrapper > .textarea {
+  box-sizing: border-box;
+  padding: 10rpx;
+}
+.placeholder-class {
+  font-size: 30rpx;
+}

@@ -1,0 +1,8 @@
+<!--components/moview/moview.wxml-->
+<view class='container'>
+<view class="move-wrapper" wx:if="{{show}}" bindtap='goAbout' bindlongtap='handlelongtap'>
+  <view class='move-box'>
+    <view class='iconfont icon-about'></view>
+  </view>
+</view>
+</view>

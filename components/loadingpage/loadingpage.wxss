@@ -1,0 +1,21 @@
+/* components/loadingpage/loadingpage.wxss */
+.loading-wrapper {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading-wrapper .loading-box {
+  width: 500rpx;
+  height: 500rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transform: translateY(-300rpx) */
+}

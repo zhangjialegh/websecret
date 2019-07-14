@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 添加卡片按钮 -->
+  <button plain class='add-btn' bindtap='goAddCard'>
+   <text class='iconfont icon-plus'></text>
+  </button>
+
+  <button data-id="{{item.id}}" wx:for="{{cardLists}}" wx:key="{{item.name+index}}" bindtap='goCardDetail' plain class='record-item' bindlongtap='handleMoreOpt' hover-class='button-hover-class'>
+    <view class='logo-box'>
+    <!-- <image/> -->
+    <text>{{item.logo}}</text>
+    </view>
+
+    <view class='record'>
+      <text class='title'>{{item.webname}}</text>
+      <text class='desc'>更新时间：{{item.updatedAt}}</text>
+    </view>
+
+    <!-- <view class='operation' catchtap='handleCopy'>
+      <text class='iconfont icon-copy'></text>
+    </view> -->
+  </button>
+
+  <!-- loading-page -->
+  <loading-page show="{{isLoading}}" />
+
+  <!-- about -->
+  <moview />
+</view>

@@ -1,0 +1,51 @@
+/* pages/about/about.wxss */
+.section {
+  padding-bottom: 40rpx;
+}
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50rpx;
+  flex-direction: column;
+}
+.app-name {
+  font-size: 32rpx;
+  color: var(--text-grey-color);
+}
+.logo-box {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2rpx solid var(--base-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15rpx;
+}
+.logo-box > image {
+  width: 90%;
+  height: 90%;
+}
+.title-1 {
+  border-left: 8rpx solid var(--base-color);
+  color: var(--text-base-color);
+  font-size: 36rpx;
+  padding: 4rpx 15rpx;
+  margin: 15rpx 0;
+  margin-top: 50rpx;
+}
+.content {
+  font-size: 32rpx;
+  color: var(--text-grey-color);
+}
+.paragraph {
+  display: block;
+  line-height: 60rpx;
+  margin: 15rpx 0;
+}
+.heavy {
+  color: var(--text-base-color);
+  font-weight: 500;
+}

@@ -1,0 +1,8 @@
+<!--components/loadingpage/loadingpage.wxml-->
+<view class='container' wx:if="{{isLoading}}">
+ <view class='loading-wrapper'>
+   <view class='loading-box'>
+    <load-icon color="#73b9a2" size="large"/>
+   </view>
+ </view>
+</view>

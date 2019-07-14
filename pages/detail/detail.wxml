@@ -1,0 +1,58 @@
+<!--pages/detail.wxml-->
+<view class='container'>
+  <view class='header' style="background:{{color}}">
+    <view class='logo-wrapper'>
+      <view class='logo-box'>
+        <text>{{cardInfo.logo}}</text>
+      </view>
+      <text class='web-name'>{{cardInfo.webname}}</text>
+    </view>
+    <view class='operation'>
+      <button plain class="iconfont {{editing ? 'icon-sure' : 'icon-edit'}}" hover-class='icon-hover-class' bindtap='toggleEdit'></button>
+    </view>
+  </view>
+
+  <view class='section'>
+    <scroll-view scroll-y style="height: 100%;">
+      <view class='input-wrapper'>
+        <text class='input-label'>登录名</text>
+        <input data-value="name" class="input {{!editing ? '' : activename == 'name' ? 'active-border' : 'normal-border'}}" type='text' value="{{name}}" disabled="{{editing ? false : true}}" bindinput='handleInput' bindfocus='handleFocus' bindblur='handleBlur'></input>
+        <view class='operation' wx:if="{{!editing}}">
+          <view class='iconfont'></view>
+          <button plain class='copy-btn' bindtap='handleNameCopy'>复制</button>
+        </view>
+      </view>
+
+      <block wx:if='{{!editing}}'>
+        <view class='input-wrapper'>
+          <text class='input-label'>记忆密码</text>
+          <input data-value="recordPwd" class="input {{activerecordPwd == 'recordPwd' ? 'active-border' : 'normal-border'}}" type='text' password='{{true}}' value="{{recordPwd}}" bindinput='handleInput' bindfocus='handleFocus' bindblur='handleBlur'></input>
+        </view>
+        <view class='input-wrapper'>
+          <text class='input-label'>区分代号</text>
+          <input data-value="diffCode" class="input {{activediffCode == 'diffCode' ? 'active-border' : 'normal-border'}}" type='text' value="{{diffCode}}" bindinput='handleInput' bindfocus='handleFocus' bindblur='handleBlur'></input>
+          <view class='operation'>
+            <view class='iconfont'></view>
+            <button plain class='copy-btn' bindtap='generate'>生成</button>
+          </view>
+        </view>
+        <view class='input-wrapper'>
+          <text class='input-label'>密码</text>
+          <input class='input generate' type='text' password='{{pwdShow ? false : true}}' value="{{genePwd}}" disabled="{{true}}"></input>
+          <view class='operation more' wx:if="{{genePwd}}">
+            <view class="iconfont {{pwdShow ? 'icon-show' : 'icon-hidden'}}" bindtap='togglePwdShow'></view>
+            <button plain class='copy-btn' bindtap='handlePwdCopy'>复制</button>
+          </view>
+        </view>
+      </block>
+
+      <view class='input-wrapper'>
+        <text class='input-label'>备注</text>
+        <textarea wx:if="{{!isLoading}}" class='textarea' placeholder='请输入内容...' placeholder-class="placeholder-class" type='text' value="{{remark}}" focus="{{true}}" bindinput='handleRemarkInput' disabled="{{editing ? false : true}}"></textarea>
+      </view>
+    </scroll-view>
+  </view>
+
+  <!-- loading-page -->
+  <loading-page show="{{isLoading}}" />
+</view>

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "loading-page": "/components/loadingpage/loadingpage"
+  }
+}

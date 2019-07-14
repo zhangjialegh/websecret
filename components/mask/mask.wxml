@@ -1,0 +1,4 @@
+<!-- components/mask/mask.wxml -->
+<view class='mask-container' style="background:rgba(0,0,0,{{opacity}})" data-target="outside" catchtap="clickoutside" catchtouchmove="stopBubble">
+    <slot></slot>
+</view>

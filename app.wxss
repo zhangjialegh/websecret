@@ -1,0 +1,54 @@
+/**app.wxss**/
+@import "/assets/iconfont/icon.wxss";
+
+page {
+  width: 100%;
+  height: 100%;
+  --base-color: #73b9a2;
+  --text-base-color: #1d1d1d;
+  --text-black-color: #000000;
+  --text-grey-color: #848484;
+  --border-medium-color: #d7d7d7;
+  --border-bottom-color: #e5e5e5;
+  --border-light-color: #e9e9e9;
+  --red-color: #FF3A30;
+  --section-padding: 40rpx;
+  --font-family-semibold: PingFangSC-Semibold, sans-serif;
+  --font-family-medium: PingFangSC-Medium, sans-serif;
+  --font-family-regular: PingFangSC-Regular, sans-serif;
+  --font-family-light: PingFangSC-Light, sans-serif;
+  --close-button-color: #666666;
+}
+
+page view {
+  box-sizing: border-box;
+}
+page scroll-view {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+} 
+
+.section {
+  position: relative;
+  padding: 0 30rpx;
+}
+
+button[plain] {
+  border: none;
+  line-height: inherit;
+  margin: 0;
+}
+.button-hover-class {
+  background: rgb(233, 233, 233) !important;
+}

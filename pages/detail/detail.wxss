@@ -1,0 +1,127 @@
+/* pages/detail.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 250rpx;
+}
+.header > .logo-wrapper {
+  flex:1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20rpx 0;
+}
+.header > .logo-wrapper > .logo-box {
+  width: 120rpx;
+  height: 120rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80rpx;
+  color: #fff;
+  border: 1rpx solid var(--border-light-color);
+  border-radius: 3rpx;
+  margin-bottom: 20rpx;
+}
+.header > .logo-wrapper > .web-name {
+  font-size: 32rpx;
+  color: #fff;
+}
+
+.header > .operation {
+  position: absolute;
+  right: 30rpx;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header > .operation > .iconfont {
+  display: block;
+  font-size: 34rpx;
+  color: #fff;
+  padding: 10rpx;
+  border-radius: 50%;
+}
+
+.header > .operation > .iconfont.icon-sure {
+  font-size: 38rpx;
+}
+.icon-hover-class {
+  background: rgba(233,233,233,0.4) !important;
+}
+.section {
+  flex: 1;
+  height: 280rpx;
+}
+
+.input-wrapper {
+  padding: 40rpx 0;
+  position: relative;
+}
+.input-wrapper > .input {
+  width: 500rpx;
+}
+.input-wrapper > .input.generate {
+  background: #efefef;
+}
+.input-wrapper > .input.normal-border {
+  border-bottom: 1rpx solid var(--border-light-color);
+}
+.input-wrapper > .input.active-border {
+  border-bottom: 1rpx solid var(--base-color);
+}
+.input-wrapper > .input-label {
+  display: block;
+  font-size: 32rpx;
+  color: var(--text-grey-color);
+  margin-bottom: 20rpx;
+}
+
+.input-wrapper > .operation {
+  position: absolute;
+  right: -20rpx;
+  bottom: 30rpx;
+  height: 60rpx;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.input-wrapper > .operation.more {
+  bottom: 35rpx;
+}
+.input-wrapper > .operation > .iconfont {
+  display: block;
+  font-size: 40rpx;
+  width: 80rpx;
+  height: 100%;
+  line-height: 60rpx;
+  text-align: center;
+}
+.input-wrapper > .operation > .copy-btn {
+  font-size: 32rpx;
+  color: var(--base-color);
+  width: 120rpx;
+  height: 100%;
+  line-height: 60rpx;
+  padding: 0;
+}
+.input-wrapper > .operation > .copy-btn.large {
+  width: 180rpx;
+}
+.input-wrapper > .textarea {
+  box-sizing: border-box;
+  padding: 10rpx;
+}
+.placeholder-class {
+  font-size: 30rpx;
+  z-index: -1;
+}
