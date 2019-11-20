@@ -65,6 +65,9 @@ Page({
         }
       }).then(res => {
         if(res.success) {
+          const pages = getCurrentPages()
+          const PrePage = pages[pages.length - 2]
+          PrePage.getAllCards()
           wx.navigateBack()
         }
       })

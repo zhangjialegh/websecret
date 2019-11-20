@@ -11,7 +11,7 @@
    <view class='title-1'>简介</view>
    <view class='content'>
     <text class='paragraph'>网密是一款帮助用户储存网络账号的小软件，同时可以通过<text class="heavy">前端实时计算密码，无需后台存储，更加安全</text>，用户只要记住一个密码，就可以为不同的网络账号生成密码。</text>
-    <text class='paragraph'>Web平台请访问 <text class="heavy" selectable="{{true}}">https://bestzjl.vicp.io</text></text>
+    <text class='paragraph'>Web平台请访问 <text class="heavy" selectable="{{true}}">{{web}}</text></text>
    </view>
 
    <view class='title-1'>说明</view>

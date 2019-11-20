@@ -130,9 +130,10 @@ Page({
   },
   onLoad: function () {
     this.initUserInfo()
+    this.getAllCards()
   },
   onShow: function () {
-    this.getAllCards()
+    
   },
 
   /**

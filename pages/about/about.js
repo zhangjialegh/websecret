@@ -1,11 +1,12 @@
 // pages/about/about.js
+const gd = getApp().globalData
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    web: gd.config.BASE_URL
   },
 
   /**
